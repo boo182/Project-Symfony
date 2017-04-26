@@ -1,0 +1,4 @@
+ca_blog:
+    resource: "@CABlogBundle/Resources/config/routing.yml"
+    prefix:   /
+

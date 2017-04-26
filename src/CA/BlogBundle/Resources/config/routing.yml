@@ -1,0 +1,23 @@
+ca_blog_post:
+    resource: "@CABlogBundle/Resources/config/routing/post.yml"
+    prefix:   /post
+
+
+ca_blog_user:
+    resource: "@CABlogBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
+index:
+    path:     /{index}
+    defaults: { _controller: CABlogBundle:BlogController:index, index: null }
+    requirements:
+      index: index
+
+login:
+    path:     /login
+    defaults: { _controller: CABlogBundle:SessionController:login }
+
+logout:
+    path:     /logout
+
+

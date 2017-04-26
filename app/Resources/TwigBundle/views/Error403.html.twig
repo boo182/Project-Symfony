@@ -1,0 +1,14 @@
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>ERROR 403 Action Denied</h1>
+
+    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        {# ... #}
+    {% endif %}
+
+    <p>
+        You are not allowed to make that change HACKER <a href="{{ path('homepage') }}">return to the homepage</a>.
+    </p>
+{% endblock %}
